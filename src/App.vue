@@ -1,17 +1,27 @@
 <template>
-  <div id="app">
+  <!-- <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </div> -->
+  <div id="app">
+    <h1>Notes</h1>
+    <TodoList />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// import BaseInputText from './components/BaseInputText.vue'
+// import BaseTodoInput from './components/BaseTodoInput.vue'
+import TodoList from './components/TodoList.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
+    // BaseInputText
+    // BaseTodoInput
+    TodoList
   }
 }
 </script>
@@ -23,6 +33,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.4;
+  color: #32485F;
 }
 </style>

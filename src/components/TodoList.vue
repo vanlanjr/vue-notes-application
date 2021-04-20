@@ -1,6 +1,7 @@
 <template>
   <div>
     <BaseTodoInput />
+    <button @click="$emit('add')">Add Todo Item</button>
     <ul v-if="todos.length">
       <TodoListItem
         v-for="todo in todos"
@@ -26,28 +27,41 @@ export default {
   },
   data () {
     return {
-      newTodoText: '',
+      newTodoCategory: '',
+      newTodoName: '',
+      newTodoDueDate: '',
       todos: [
         {
           id: nextTodoId++,
-          text: 'Learn Vue'
+          category: 'ISAT 252',
+          name: 'Learn Vue',
+          dueDate: 'March 4th'
+
         },
         {
           id: nextTodoId++,
-          text: 'Learn about single-file components'
+          category: 'ISAT 252',
+          name: 'Complete Project',
+          dueDate: 'March 6th'
         }
       ]
     }
   },
   methods: {
     addTodo () {
-      const trimmedText = this.newTodoText.trim()
-      if (trimmedText) {
+      const trimmedCategory = this.newTodoCategory.trim()
+      const trimmedName = this.newTodoName.trim()
+      const trimmedDueDate = this.newTodoDueDate.trim()
+      if (trimmedName) {
         this.todos.push({
           id: nextTodoId++,
-          text: trimmedText
+          category: trimmedCategory,
+          name: trimmedName,
+          dueDate: trimmedDueDate
         })
-        this.newTodoText = ''
+        this.newTodoCategory = ''
+        this.newTodoName = ''
+        this.newTodoDueDate = ''
       }
     },
     removeTodo (idToRemove) {
@@ -60,5 +74,7 @@ export default {
 </script>
 
 <style scoped>
-
+  li {
+    margin-bottom: 4px;
+  }
 </style>

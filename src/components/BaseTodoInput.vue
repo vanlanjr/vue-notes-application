@@ -9,7 +9,7 @@
     <BaseInputText
       placeholder="Todo due date"
     />
-    <button @click="addTodo" :disabled="addDisabled">Add Todo Item</button>
+    <!-- <button @click="addTodo">Add Todo Item</button> -->
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
   button {
-    width: 105%;
+    width: 104%;
     padding: 8px 10px;
   }
 </style>

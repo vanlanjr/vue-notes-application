@@ -1,6 +1,6 @@
 <template>
   <li>
-    {{ todo.text }}
+    {{ todo.category }}: {{ todo.name }} due on {{ todo.dueDate }}
     <button>Add reminder</button>
     <button @click="$emit('remove', todo.id)">X</button>
   </li>
@@ -16,3 +16,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  button {
+    padding: 2px 3px;
+    margin-left: 4px;
+  }
+</style>

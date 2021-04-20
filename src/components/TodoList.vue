@@ -1,8 +1,5 @@
 <template>
   <div>
-    <!-- <BaseTodoInput
-      @add="addTodo"/> -->
-    <!-- <button @click="addTodo">Add Todo Item</button> -->
     <BaseInputText
       v-model="newTodoCategory"
       placeholder="Todo category"

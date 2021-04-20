@@ -1,6 +1,8 @@
+// NOT USED AT THE MOMENT
 <template>
   <div>
     <BaseInputText
+      v-model="newTodoText"
       placeholder="Todo category"
     />
     <BaseInputText

@@ -9,7 +9,7 @@
     <BaseInputText
       placeholder="Todo due date"
     />
-    <!-- <button @click="addTodo">Add Todo Item</button> -->
+    <button @click="$emit('add')">Add Todo Item</button>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <li>
-    {{ todo.category }}: {{ todo.name }} due on {{ todo.dueDate }}
+    {{ todo.category }}: {{ todo.name }} due {{ todo.dueDate }}
     <button>Add reminder</button>
     <button @click="$emit('remove', todo.id)">X</button>
   </li>

@@ -29,7 +29,6 @@
 // import BaseTodoInput from './BaseTodoInput.vue'
 import TodoListItem from './TodoListItem.vue'
 import BaseInputText from './BaseInputText.vue'
-
 // const DB_NAME = 'tododb'
 // const DB_VERSION = 1
 
@@ -39,6 +38,12 @@ export default {
   components: {
     BaseInputText,
     TodoListItem
+  },
+  props: {
+    note: {
+      type: Object,
+      required: true
+    }
   },
   data () {
     return {

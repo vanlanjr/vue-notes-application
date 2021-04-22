@@ -2,16 +2,19 @@
   <div id="app">
     <h1>Notes</h1>
     <TodoList />
+    <!-- <Notes /> -->
   </div>
 </template>
 
 <script>
 import TodoList from './components/TodoList.vue'
+// import Notes from './components/Notes.vue'
 
 export default {
   name: 'App',
   components: {
     TodoList
+    // Notes
   }
 }
 </script>

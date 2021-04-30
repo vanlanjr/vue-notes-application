@@ -4,8 +4,12 @@
 //   ]
 // }
 
+// module.exports = {
+//   publicPath: process.env.NODE_ENV === 'production'
+//     ? '/vue-notes-application/'
+//     : '/'
+// }
+ 
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/vue-notes-application/'
-    : '/'
+  publicPath: '/vue-notes-application/'
 }

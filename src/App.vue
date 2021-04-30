@@ -1,9 +1,11 @@
 <template>
-  <div id="app">
-    <h1>Notes</h1>
-    <TodoList />
-    <!-- <Notes /> -->
-  </div>
+  <v-app>
+    <div id="app">
+      <h1>Notes</h1>
+      <TodoList />
+      <!-- <Notes /> -->
+    </div>
+  </v-app>
 </template>
 
 <script>
@@ -34,5 +36,6 @@ export default {
 
 h1 {
   text-align: center;
+  padding: 20px;
 }
 </style>

@@ -14,7 +14,7 @@
     <!-- Current Note View -->
     <div id="current-note-view">
       <TodoList
-        
+
       />
     </div>
   </div>

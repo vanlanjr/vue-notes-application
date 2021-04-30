@@ -1,8 +1,8 @@
 <template>
   <li>
     {{ todo.category }}: {{ todo.name }} due {{ todo.dueDate }}
-    <button>Add reminder</button>
-    <button @click="$emit('remove', todo.id)">X</button>
+    <!-- <v-btn color="secondary" small >Add reminder</v-btn> -->
+    <v-btn color="secondary" small @click="$emit('remove', todo.id)">X</v-btn>
   </li>
 </template>
 

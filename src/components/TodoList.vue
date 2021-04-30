@@ -12,7 +12,8 @@
       v-model="newTodoDueDate"
       placeholder="Todo due date"
     />
-    <button @click="addTodo">Add Todo Item</button>
+    <!-- <button @click="addTodo">Add Todo Item</button> -->
+    <v-btn id="add-btn" color="primary" block @click="addTodo">Add Todo Item</v-btn>
     <ul v-if="todos.length">
       <TodoListItem
         v-for="todo in todos"
@@ -39,31 +40,31 @@ export default {
     BaseInputText,
     TodoListItem
   },
-  props: {
-    note: {
-      type: Object,
-      required: true
-    }
-  },
+  // props: {
+  //   note: {
+  //     type: Object,
+  //     required: true
+  //   }
+  // },
   data () {
     return {
       newTodoCategory: '',
       newTodoName: '',
       newTodoDueDate: '',
       todos: [
-        {
-          id: nextTodoId++,
-          category: 'ISAT 252',
-          name: 'Learn Vue',
-          dueDate: 'March 4th'
+        // {
+        //   id: nextTodoId++,
+        //   category: 'ISAT 252',
+        //   name: 'Learn Vue',
+        //   dueDate: 'March 4th'
 
-        },
-        {
-          id: nextTodoId++,
-          category: 'ISAT 252',
-          name: 'Complete Project',
-          dueDate: 'March 6th'
-        }
+        // },
+        // {
+        //   id: nextTodoId++,
+        //   category: 'ISAT 252',
+        //   name: 'Complete Project',
+        //   dueDate: 'March 6th'
+        // }
       ]
       // // database data
       // db: this.getDb(),
@@ -176,5 +177,10 @@ export default {
 <style scoped>
   li {
     margin-bottom: 4px;
+  }
+
+  #add-btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 </style>
